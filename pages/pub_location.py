@@ -5,14 +5,14 @@ import os
 
 FILE_DIR = os.path.dirname(os.path.abspath(__file__))
 st.write(FILE_DIR)
-PARENT_DIR = os.path.join(FILE_DIR, os.pardir)
-st.write(PARENT_DIR)
-dir_of_interest = os.path.join(PARENT_DIR, "resources")
+#PARENT_DIR = os.path.join(FILE_DIR, os.pardir)
+#st.write(PARENT_DIR)
+dir_of_interest = os.path.join(FILE_DIR, "open_pubs1.csv")
 st.write(dir_of_interest)
-data_path= os.path.join(dir_of_interest, "data","open_pubs1.csv")
-st.write(data_path)
-data_path = data_path.replace("/..",'')
-data = pd.read_csv(data_path)
+#data_path= os.path.join(dir_of_interest, "data","open_pubs1.csv")
+#st.write(data_path)
+#data_path = data_path.replace("/..",'')
+data = pd.read_csv(dir_of_interest)
 
 #data = pd.read_csv(r'/Users/vamsi/Downloads/open_pubs1.csv')
 
