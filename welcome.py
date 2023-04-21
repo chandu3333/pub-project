@@ -5,11 +5,11 @@ import matplotlib.pyplot as plt
 import os
 
 FILE_DIR = os.path.dirname(os.path.abspath(__file__))
-#PARENT_DIR = os.path.join(FILE_DIR, os.pardir)
-dir_of_interest = os.path.join(FILE_DIR, "open_pubs1.csv")
-#data_path= os.path.join(dir_of_interest, "data","open_pubs1.csv")
-#data_path = data_path.replace("/..",'')
-data = pd.read_csv(dir_of_interest)
+PARENT_DIR = os.path.join(FILE_DIR, os.pardir)
+dir_of_interest = os.path.join(FILE_DIR, "PARENT_DIR")
+data_path= os.path.join(dir_of_interest, "data","open_pubs1.csv")
+data_path = data_path.replace("/..",'')
+data = pd.read_csv(data_path)
 
 st.header('WELCOME , DISCOVER THE _:red[PUBS]_ NEAR YOUR LOCATION 🍺')
 
